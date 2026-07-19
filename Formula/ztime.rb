@@ -5,21 +5,21 @@
 class Ztime < Formula
   desc "ZuluTime developer CLI — book hours from the terminal"
   homepage "https://zulutime.io/docs/cli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zulutime-io/cli/releases/download/v0.1.0/ztime_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c2e9301a3a053cc25c43d89bb9daca3087e05cfc340f90bce4312f4c0ab384d6"
+      url "https://github.com/zulutime-io/cli/releases/download/v0.1.1/ztime_0.1.1_darwin_amd64.tar.gz"
+      sha256 "57ff617a066acd3d15c88488ead1400301a8a4f147a3a8a7f4fee9bb2b81ccf9"
 
       define_method(:install) do
         bin.install "ztime"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zulutime-io/cli/releases/download/v0.1.0/ztime_0.1.0_darwin_arm64.tar.gz"
-      sha256 "8e77c8dabb3e82f192610eb9b12558897281a4e19f012e6795913b99d0c1f7b9"
+      url "https://github.com/zulutime-io/cli/releases/download/v0.1.1/ztime_0.1.1_darwin_arm64.tar.gz"
+      sha256 "5dcbd6abc9ef58cd2e8994e7cb98ad19c5c277d400a519e78be319eb0d51cd88"
 
       define_method(:install) do
         bin.install "ztime"
@@ -29,15 +29,15 @@ class Ztime < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zulutime-io/cli/releases/download/v0.1.0/ztime_0.1.0_linux_amd64.tar.gz"
-      sha256 "1d185dd6dcf29691a704cad0c76815349413887dcb9429b954c1c98e4905ae97"
+      url "https://github.com/zulutime-io/cli/releases/download/v0.1.1/ztime_0.1.1_linux_amd64.tar.gz"
+      sha256 "f8dbc00c3414b6fc618d595863ceb27c68d37400545941545ceb9160bcae4fe3"
       define_method(:install) do
         bin.install "ztime"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zulutime-io/cli/releases/download/v0.1.0/ztime_0.1.0_linux_arm64.tar.gz"
-      sha256 "2dee1df6eb97397deab7fbc049ad1f132fab446b23225adfce737ccbf3afb637"
+      url "https://github.com/zulutime-io/cli/releases/download/v0.1.1/ztime_0.1.1_linux_arm64.tar.gz"
+      sha256 "ea9316be2495f34a21316d24bbfc8c017d7cc9803fc83878b96032aab8b5d8d5"
       define_method(:install) do
         bin.install "ztime"
       end
